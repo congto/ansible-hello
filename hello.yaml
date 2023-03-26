@@ -1,0 +1,8 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: "Echo hello string"
+      shell: echo "{{ ipaddress_master }}" >> ~/echo.txt
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
